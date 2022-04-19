@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const d = new Date() 
+        document.write(d);
+        // 7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):
+        const e = new Date(2018, 11, 24, 10, 33, 30, 0);
+        // Note: JavaScript counts months from 0 to 11:
+        //     January = 0.
+        //   December = 11.
+        // document.write(e);
+        // 6 numbers specify year, month, day, hour, minute, second:
+        // You cannot omit month. If you supply only one parameter it will be treated as milliseconds
+        // const d = new Date("October 13, 2014 11:13:00");
+        // new Date(dateString) creates a new date object from a date string:
+        d.toString();
+        d.toUTCString();
+        d.toDateString();
+        d.toISOString();
+
+        // const d = new Date("2015-03-25");
+
+
+        // const d = new Date();
+        document.write(d.getTime(),"</br>",
+        d.getFullYear(),"</br>",
+        d.getMonth(),"</br>",
+        d.getDate(),"</br>",
+        d.getHours(),"</br>",
+        d.getMinutes(),"</br>",
+        d.getSeconds(),"</br>",
+        d.getMilliseconds(),"</br>",
+        d.getDay(),"</br>",)
+//         getFullYear()	Get the year as a four digit number (yyyy)
+// getMonth()	Get the month as a number (0-11)
+// getDate()	Get the day as a number (1-31)
+// getHours()	Get the hour (0-23)
+// getMinutes()	Get the minute (0-59)
+// getSeconds()	Get the second (0-59)
+// getMilliseconds()	Get the millisecond (0-999)
+// getTime()	Get the time (milliseconds since January 1, 1970)
+// getDay()	Get the weekday as a number (0-6)
+// Date.now()	Get the time. ECMAScript 5.
+
+        // if you want in utc use utc between get year() like getUTCMonth()
+
+    </script>
+</body>
+</html>

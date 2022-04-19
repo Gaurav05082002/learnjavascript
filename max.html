@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p  id="page1">
+   
+    </p>
+    <script>
+        const number = [100, 200 ,3, 400,500 ,150];
+        function max(arr) {
+            var len = arr.length;
+            var maxn = 0;
+            for (var i=0; i <len ; i ++) {
+                if (arr[i]>maxn) {
+                    
+                    maxn=arr[i];
+
+                }
+            }
+            return maxn;
+        }
+         let x = max(number);
+        document.getElementById("page1").innerHTML=x;
+
+    </script>
+</body>
+</html>

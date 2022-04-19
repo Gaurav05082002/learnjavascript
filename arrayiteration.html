@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //  for each
+        // const numbers = [45, 4, 9, 16, 25];
+        //  let txt = "";
+        //  numbers.forEach(myFunction);
+
+        //  function myFunction(value, index, array) {
+        //  txt += value + "<br>";
+        //   }
+
+
+        //   array map
+        // The map() method creates a new array by performing a function on each array element.
+        // The map() method does not execute the function for array elements without values.
+        // The map() method does not change the original array.
+        const numbers1 = [45, 4, 9, 16, 25];
+        numbers1.forEach(function(value){
+            document.write(value*2,"</br>");
+        })
+         const numbers2 = numbers1.map(myFunction);
+
+        function myFunction(value, index, array) {
+         return value * 2;
+         }
+
+        //  if you use map then > < will perform as voolean and will give true false while filter allows to give direct numbers 
+
+
+    
+
+        //    filter
+         const over18 = numbers1.filter(myFunction);
+
+         function myFunction(value) {
+            return value > 18;
+              }
+              document.write(over18);
+
+
+
+
+
+         // array reduce() & reduceRight()
+        //  reduce works from left to right and reduceRight works from right to left 
+        //  The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+        //  he reduce() method works from left-to-right in the array. See also reduceRight().
+        //  The reduce() method does not reduce the original array.
+        const numbers = [45, 4, 9, 16, 25];
+        let sum = numbers.reduce(myFunction);
+
+        function myFunction(total, value, index, array) {
+  return total + value;
+}         // while it uses total and value only 
+
+
+
+            //Array every() & array some()
+            // results in true or false 
+            // if you wan test should be passed by every value use every and if you want to check if atleast one pass your condition use some 
+            const numbers = [45, 4, 9, 16, 25];
+           let allOver18 = numbers.every(myFunction);
+
+            function myFunction(value, index, array) {
+              return value > 18;
+              }
+            //   output = false 
+            function myFunction(value, index, array) {
+           return value > 18;
+             }
+             //output true 
+              
+            
+
+            //indexOf() & lastIndexOf()
+            const fruits = ["Apple", "Orange", "Apple", "Mango"];
+             let position = fruits.indexOf("Apple") + 1;
+            //  output for apple =1 
+            //  output for orange =2
+            //  Array.indexOf() returns -1 if the item is not found.
+            //  If the item is present more than once, it returns the position of the first occurrence.
+            // Array.lastIndexOf() is the same as Array.indexOf(), but returns the position of the last occurrence of the specified element.
+
+
+
+            // find() & findIndexOf()
+            const numbers = [4, 9, 16, 25, 29];
+           let first = numbers.find(myFunction);
+           function myFunction(value, index, array) {
+           return value > 18;
+            }
+            // The find() method returns the value of the first array element that passes a test function.
+            // The findIndex() method returns the index of the first array element that passes a test function.
+            let first = numbers.findIndex(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+
+
+                // array.from()
+                const myArr =Array.from("ABCDEFG");
+                // Create an Array from a String:
+              
+
+
+
+                // JavaScript Array includes()
+                // CMAScript 2016 introduced Array.includes() to arrays. This allows us to check if an element is present in an array (including NaN, unlike indexOf).
+                const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+              fruits.includes("Mango"); // is true 
+    </script>
+</body>
+
+</html>

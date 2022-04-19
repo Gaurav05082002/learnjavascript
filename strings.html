@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let text = "gaurav";
+    // You can use single or double quotes:
+    // You can use quotes inside a string, as long as they don't match the quotes surrounding the string:
+    // let answer2 = "He is called 'Johnny'";
+// let answer3 = 'He is called "Johnny"';
+     let length = text.length;
+    //  Escape Character
+    // let text = "We are the so-called "Vikings" from the north.";
+    // the just aove string will be mis  understood by js  but if you give \" that will be understand as " only 
+    //document.getElementById("demo").innerHTML = "Hello " +
+// "Dolly!";
+
+// But strings can also be defined as objects with the keyword new:
+let y = new String("John");
+
+
+// string method 
+let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = txt.length;
+
+
+
+// Extracting String Parts
+// There are 3 methods for extracting a part of a string:
+
+// slice(start, end)slice() extracts a part of a string and returns the extracted part in a new string.(end not included).
+// substring(start, end)
+// substr(start, length)
+let part = str.slice(-12, -6); //this just means it will count from back and go to 12 position
+let part = str.slice(7);  // If you omit the second parameter, the method will slice out the rest of the string:
+
+
+
+// substring() is similar to slice().
+// The difference is that substring() cannot accept negative indexes.
+let str = "Apple, Banana, Kiwi";
+let part = str.substring(7, 13);
+
+
+
+// substr() is similar to slice().
+// The difference is that the second parameter specifies the length of the extracted part.
+// f you omit the second parameter, substr() will slice out the rest of the string.
+
+
+// The replace() method replaces a specified value with another value in a string:
+let text = "Please visit Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
+// The replace() method does not change the string it is called on.
+// The replace() method returns a new string.
+// The replace() method replaces only the first match
+// If you want to replace all matches, use a regular expression with the /g flag set. See examples below.
+
+
+let text1 = "Hello World!";
+let text2 = text1.toUpperCase();
+let text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+ 
+
+// concat() joins two or more strings:
+let text1 = "Hello";
+let text2 = "World";
+ let text3 = text1.concat(" ", text2);  //" " thsi is just adding space and nothing else 
+
+
+ let text1 = "      Hello World!      ";
+let text2 = text1.trim();  //The trim() method removes whitespace from both sides of a string:
+
+
+let text = "5";
+let padded = text.padStart(4,0);  // output 00005
+let padded = text.padEnd(4,0);   // output 50000
+
+// The charAt() method returns the character at a specified index (position) in a string:
+let text = "HELLO WORLD";
+let char = text.charAt(0); //output H
+let char = text[0];  // output H
+let char = text.charCodeAt(0);
+// The charCodeAt() method returns the unicode of the character at a specified index in a string:The method returns a UTF-16 code (an integer between 0 and 65535).
+
+
+
+// Converting a String to an Array
+text.split(",")    // Split on commas
+text.split(" ")    // Split on spaces
+text.split("|")    // Split on pipe
+
+
+
+let str = "Please locate where 'locate' occurs!";
+str.indexOf("locate");
+// The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:
+
+
+// The search() method searches a string for a specified value and returns the position of the match:
+let str = "Please locate where 'locate' occurs!";
+str.search("locate");
+
+// he match() method searches a string for a match against a regular expression, and returns the matches, as an Array object.
+
+let text = "Hello world, welcome to the universe.";
+text.includes("world");
+// The includes() method returns true if a string contains a specified value.
+text.includes("world", 12);   
+// Check if a string includes "world", starting the search at position 12:
+
+
+// The startsWith() method returns true if a string begins with a specified value, otherwise false:
+let text = "Hello world, welcome to the universe.";
+text.startsWith("Hello");
+text.endsWith("universe");
+ </script>
+</body>
+</html>

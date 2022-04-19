@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #change {
+            color: red;
+        }
+    </style>
+    <script>
+        document.write("hello world")
+        var a1 =1;
+        var a2 =3;
+        var a3 = a1+a2;
+        var name = "gaurav"
+        // document.write(name,a1,"<br>");
+        // var input = prompt("tell us your age");
+        // alert("you have given input");
+        // confirm("confirmed")
+        //  document.write(Math.pow(2,9));
+        //  math.abs
+        //  math.sqrt
+        //  var str1 = "gaurav patidxar"
+        //  document.write(str1.length)
+        //       str1.indexof(patidar)
+        // document.write(a3);
+        // var books = ["harry potter" , "ncert" ]
+        
+    
+        function addnumbers (c,d) {
+            var e;
+            e=c+d;
+            return e;
+        }
+        var final = addnumbers(2,3);
+        document.write(final);
+
+        function sayhey  () {
+            alert("you are introduced");
+            document.getElementById("change").style.color="black";
+        }
+        
+        
+        const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+function myMove() {
+  let id = null;
+  const elem = document.getElementById("animate");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+     element.addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("Hello World!");
+}    
+          </script>
+
+</head>
+<body>
+    <p id="para1">
+        hey here 
+    </p>
+    <div id="change">
+         hindi
+    </div>
+    <button  onclick="sayhey()" ></button>
+    <script>
+         document.getElementById('para1').innerHTML="hey not hey"
+         
+    </script>
+</body>
+</html>
