@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello
+    <div id="firstdiv"> hey bro i am your dad</div>
+    <script>
+    //    document.writeln("Hello World!");
+    //    document.write("<br>")
+    //         document.writeln("Have a nice day!"); 
+    //          var a = 3;
+    //          function name() {
+    //              var num; 
+    //              num=4;
+    //              a=2;
+    //              document.write("valueo of num and a inside function is"+num+"a="+a);
+                
+    //          }
+    //          document.write("valueo of a outsied function is a="+a);
+    //          name();
+
+    // GETTING THE OUTPUTS
+    
+    // function name(){
+    // document.getElementById("firstdiv").innerHTML="i am your mom";}
+    // // name();
+    // window.alert("function calle");
+
+
+    // VARIABLES 
+
+    // The variable type Let shares lots of similarities with var but 
+    // unlike var, it has scope constraints
+    // var is function scoped and let is block scoped
+    // calling var z before definition will return undefined
+    // document.write(z, "\n");
+    //     var z = 2;
+ 
+    //     // calling let a before definition will give error
+    //     document.write(a);
+    //     let a = 3;
+
+        // if (document.getElementById('var').style.color == 'black')
+        //             var col1 = 'blue';
+        //         else
+        //             col1 = 'black';
+ 
+        //         // setting value of color 1 through var
+ 
+        //         if (document.getElementById('let').style.color == 'black') {
+        //             let col2 = 'red';
+        //         } else {
+        //             col2 = 'black';
+        //         }
+
+        // let is having block scope that it can be limited to block only 
+        // like if in define a variable using let in an if statement then i cant use it in  else statement;
+    //   var f=6;
+    //   if(f==5) {
+    //       const a=1;
+    //     //   let b=2;
+    //       var t=3;
+    //     //   console.log(a);
+    //   }
+    //   else {
+    //       a=6;
+    //     //   b=7;
+    //       t=8;
+    //       console.log(a);
+    //   }
+    //   var z=5;
+    //   if(z==6){
+    //       let n=1;
+    //       document.write(n);
+    //   }
+    //   else {
+    //       n=3;
+    //       document.write(n);
+    //   }
+
+
+    // const x;
+    // x = 12;
+    // this kid of initialization dont work in const /
+    // It describes the const variable cannot be Hoisted.
+    // It describes that the array values can be modified only reference to array cannot be change.
+    // It describes that the object properties can be modified only reference to object cannot be changed
+    let r=100; 
+    var g=13;
+    const x = 22;
+
+    {   
+        let r=101;
+        var g=14;
+        const x = 90;
+        console.log(x,g,r);
+   
+        {
+            let r=102;
+            var g=15;
+            const x = 77;
+            console.log(x,g,r);
+        }
+        {
+            let r=103;
+            var g=16;
+            const x = 45;
+            console.log(x,g,r);
+        }
+    }
+    console.log(x,g,r);
+
+//     the result of above cod is 
+//     90 14 101
+//  77 15 102
+//    45 16 103
+//  22 16 100
+//  var is updated while const and let is not updated they are updated in block only 
+    
+
+    </script>
+   
+    
+</body>
+</html>
