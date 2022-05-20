@@ -1,0 +1,107 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+      <script>
+
+// JAVA SCRIPT NUMBERS 
+// JavaScript Numbers does not have different types of numbers(ex: int, float, long, short)
+// Binary Numbers 
+// They start with 0b or 0B followed by 0’s and 1’s. 
+// ar x = 0b11;       
+ // x will be 3
+//  They start with 0 followed by a number of ranges from 0-7. If any number is used it will be taken as a decimal number. 
+// var x = 0111;      //x will be 73
+// They start with 0x or 0X followed by any digit belonging (0123456789ABCDEF) 
+// var x = 0xfff;         //x will be 4095
+// var x = 2E5   // x will be 200000
+// var x = 34e3   // x will be 34000
+// var x = 23e-5 //x will be 0.00023
+ 
+
+// NAMED AND ANONYMOUS FUNCTION 
+
+function name(a,g) {
+     document.write(escape("my name is" + a +"my age is " + g));
+}
+// my%20name%20isgauravmy%20age%20is% this is oupout due to escape function % and @ with links are added
+// unescape("string") is opposite of it
+// before escaping @ – + . / * _ if this are present they will not be decoded 
+var c = function(n,m) {
+        return n+m;
+}
+name("gaurav",21);
+document.write(c(8,10));
+
+NAME = (a,g) => {
+    document.write("my name is" + a +"my age is " + g);
+}
+NAME("gaurav",21);
+
+//  SPECIAL FUNCTIONS 
+window.print()  
+//  this have no parameter no returning it just print all web page info in a page 
+
+
+// The parseFloat() function is used to accept the string and convert it into a floating-point number.
+// Using parseFloat("3.14") = 3.14   
+    // return valeue is float when given parameter is string of  numbers only in case of char present it give float value before it get the first char in string 
+
+    // The date.parse() method is used to know the exact number of milliseconds that have passed since midnight, January 1, 1970, till the date we provide.
+    // The replace() method in JavaScript is used to replace the current page with another page. The Replace Method replaces the URL of the current window by the URL mention in the Replace method.
+    // location.replace(URL)
+
+    // MAPPING FUNCTIONS 
+
+    
+// Creating a map object
+var myMap = new Map();
+
+// Adding [key, value] pair to the map
+myMap.set(0, 'GeeksforGeeks');
+
+// Displaying the element which is associated with
+// the key '0' using Map.get() method
+document.write(myMap.get(0));
+Input : var myMap = new Map();
+        myMap.set(0, 'geeksforgeeks');
+        myMap.set(1, 'is an online portal');
+        myMap.set(2, 'for geeks');
+        var iterator_obj=myMap.entries();
+        document.write(iterator_obj.next().value,"<br>");
+        document.write(iterator_obj.next().value,"<br>");
+        document.write(iterator_obj.next().value,"<br>");
+
+
+Output : Array [0, "geeksforgeeks"]
+         Array [1, "is an online portal"]
+         Array [2, "for geeks"]
+         
+         The Map.clear() method in JavaScript is used for the removal of all the elements from a map and make it empty. It removes all the [key, value] from the map. No arguments are required to be sent as parameters to the Map.clear() method and it returns an undefined return value.
+        
+        
+         myMap.clear();
+        console.log(myMap.size);
+
+Output: 
+        0
+
+Input :  my_map.set(1, 'first');
+         my_map.set(2, 'second');
+         my_map.set(3,'third');
+         my_map.set(4,'fourth');
+
+         document.write(my_map.delete(3));
+
+Output : true  
+
+
+The Map.has() method returns a boolean value. It returns true if the element exists in the map else it returns false if the element doesn’t exist.
+    </script>
+ </body>
+ </html>
