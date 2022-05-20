@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, 
+    // in the form of “key: value” pairs.
+    // An object can be created with figure brackets {…} with an optional list of properties. A property is a “key: value” pair, where a key is a string (also called a “property name”), and value can be anything. 
+    //  and functions are called method
+    school = {
+         name: "pushpdeep",
+         location: "ktg",
+         students: 2000,
+         show :function show() {
+             document.write(school.name+"is having"+school.students+"students");
+         }
+
+     }
+     school.show();
+
+    //  other ways to create an object are :-
+    // Object Constructor
+    const school = new Object();
+school.name = 'Vivekanada school';
+school.location = 'Delhi';
+school.established = 1971;
+  
+school.displayInfo = function(){
+    console.log(`${school.name} was established 
+          in ${school.established} at ${school.location}`);
+}
+  
+school.displayInfo();
+
+
+// Constructors: 
+function Vehicle(name, maker) {
+   this.name = name;
+   this.maker = maker;
+}
+  
+let car1 = new Vehicle('Fiesta', 'Ford');
+let car2 = new Vehicle('Santa Fe', 'Hyundai')
+  
+console.log(car1.name);    // Output: Fiesta
+console.log(car2.name);    // Output: Santa Fe
+
+//    how to iterate over evry key  
+let person = {
+    gender : "male"
+}
+  
+var person1 = Object.create(person);
+person1.name = "Adam";
+person1.age = 45;
+person1.nationality = "Australian";
+  
+for (let key in person1) {
+// Output : name, age, nationality 
+// and gender
+    console.log(key); 
+}          
+// this is how to delete 
+delete obj1.propfirst
+</script>
+</body>
+</html>
