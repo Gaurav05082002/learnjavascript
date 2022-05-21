@@ -1,0 +1,47 @@
+<!-- in javasccript this keyword refers to the object it belongs 
+it has diffrent values depending on where t belongs
+alone this refer to the global object 
+in javascript everything is object 
+console.log(this)  ->> this refer to global object ie window 
+in regular function also , console.log(this)  ->> this refer to global object ie window 
+
+in a method thi refers to owener object 
+const thapa = {
+    name: "gaurav",
+    qualify: "mcs",
+    sum: function()  {
+        console.log(this);
+        console.log(this.name);  >>here ouput will be vinod 
+    }
+
+}
+thapa.sum();
+here when this is used in an method of object then it refers to owener object that is thappa here 
+
+in function , in stricyt mode ("use strict") , this is undefined 
+
+
+  -->
+  <!DOCTYPE html>
+<html>
+<body>
+<script>
+let people = function(name, age) {
+		this.name = name;
+		this.age = age;
+
+	this.displayInfo = function() {
+	document.write(this.name + " is " + this.age + " years old");
+	}
+	}
+
+let person1
+	= new people('John', 21);
+
+// logs John is 21 years old
+person1.displayInfo();
+</script>		
+</body>
+</html>																				
+
+  

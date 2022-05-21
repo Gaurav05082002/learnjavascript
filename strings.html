@@ -129,6 +129,34 @@ var t = a.toString();
 // how to convert values to numbers 
 // there is function for this that is Number()
 u= Number(r);
+
+Word of caution: Whenever you are declaring variables, always use the prefix let. If you don’t use the let keyword, then the variables are by default created in the global scope. For instance, in the above example, let’s just remove the keyword let before the declaration of localLet.
+working > first the variable which is not initialised usig let var or const as prfix , system first serch it in local space and if it do not get it , it searches in global scope if there is no already variable with this name  in global scope then our variable is defines as global variable 
+
+let globalLet = "This is a global variable";
+   
+function fun() {
+   localLet = "This is a local variable";
+}
+   
+fun();
+  console.log(globalLet); // This is a global variable
+  console.log(localLet); // This is a local variable
+
+
+
+// HOW TO ASCESS GLOBAL VARIABLE IN LOACAL SPACE 
+
+
+  All the global variables declared using “var” keyword or without using any keyword are attached to the window object and thus we can access the global variable name as shown in example below.
+
+var globalLet = "This is a global variable";
+   
+function fun() {
+  let globalLet = "This is a local variable";
+  console.log(window.globalLet); // This is a global variable
+}
+fun();
  </script>
 </body>
 </html>
