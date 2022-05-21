@@ -1,0 +1,40 @@
+<!-- What is JSON?
+JSON or JavaScript Object Notation is a format for structuring data.
+
+What is it used for?
+Like XML, it is one of the way of formatting the data. Such format of data is used by web applications to communicate with each other.
+
+Why JSON?
+ 
+The fact that whenever we declare a variable and assign a value to it, it’s not the variable that holds the value but rather the variable just holds an address in the memory where the initialized value is stored. Further explaining, take for example:
+Here comes JSON to the rescue, JSON serializes the data and converts it into human-readable and understandable format, which also makes it transferal and to be able to communicate. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let jsonobj = {
+        name:"harry",
+        channel:"cwh",
+        freiend:"gaurav"
+    }
+    console.log(jsonobj);
+    // this will return an object as output 
+
+    let jsonstr = JSON.stringify(jsonobj);
+    console.log(jsonstr);
+    // this will return a string having all the object information 
+
+    jsonstr = jsonstr.replace("harry","larry");
+//    since json str is a string we can use string properties here 
+
+    newjsonobj = JSON.parse(jsonstr);
+    // this wil give again a new object 
+</script>
+</body>
+</html>
