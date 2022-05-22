@@ -1,0 +1,30 @@
+<script>
+
+function add(a,b,c) {
+    console.log(a+b+c);
+}
+
+var arrval =[1,3,4,5]; 
+console.log(...arrval)
+//it will show all elements in array 
+add(...arrval);  
+// this is spread operator now 1,3,4 will go to a ,b,c 
+// sum.apply(null,arrval);
+
+
+// it can also replace concat 
+arr1 = [1,2,3];
+arr2  = [4,5,6];
+arr1=arr1.concat(arr2);
+// if i copy arr1 to arrc1
+arrc1=arr1;
+// and now i  want two more elements in arrc1 so i can push 
+arrc1.push(6,7);
+// but this elemests get also pushed in arr1 , to avoid this thing we use spread operator 
+arrc1=[...arr1,6,7];
+
+
+arr1 = [...arr1,...arr2,7,8];
+// now arr1 will be 12345678;
+
+ </script>
