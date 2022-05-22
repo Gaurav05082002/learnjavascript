@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+//         A lexical scope in JavaScript means that a variable defined outside a function can be accessible inside another function defined after the variable declaration. But the opposite is not true; the variables defined inside a function will not be accessible outside that function.
+
+// This concept is heavily used in closures in JavaScript.
+
+// Let's say we have the below code.
+
+// var x = 2;
+// var add = function() {
+//     var y = 1;
+//     return x + y;
+// };
+
+// function add(x) {
+//     let y = 5;
+//     function sub() {
+//         console.log(x+y);
+//     }
+    
+//     return sub;
+// }
+
+
+// result = add(4); 
+// result();
+
+let a = 2;
+// const b=3;
+    // b++;
+    a++;
+    console.log(a);
+    // console.log(b);
+
+     </script>
+
+</body>
+</html>
